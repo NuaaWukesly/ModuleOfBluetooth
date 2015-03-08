@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="15dp"
+        android:gravity="center_vertical|center_horizontal"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/retroot_bnt"
+            android:layout_width="80dp"
+            android:layout_height="fill_parent"
+            android:layout_marginRight="30dp"
+            android:text="上级目录" ></Button>
+
+        <Button 
+             android:id="@+id/sendData_bnt"
+            android:layout_width="80dp"
+            android:layout_height="fill_parent"
+            android:text="发送结构体" 
+            />
+        
+        <Button
+            android:id="@+id/recevice_filepage_bnt"
+            android:layout_width="80dp"
+            android:layout_height="fill_parent"
+            android:text="接收页面" ></Button>
+        
+    </LinearLayout>
+    <LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical">
+
+       <ListView
+           android:id="@+id/filelist"
+           android:layout_width="fill_parent"
+           android:layout_height="fill_parent"
+           android:layout_marginTop="5dp"
+           android:dividerHeight="2dp" >
+
+</ListView>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/music_listchild"
+    android:layout_width="fill_parent"
+    android:layout_height="50.0dip"
+    android:background="#70000000"
+    android:orientation="horizontal"
+    android:paddingLeft="5.0dip" >
+
+    <ImageView
+        android:id="@+id/songinfo_imgv"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:background="@drawable/ic_mp3"
+        android:clickable="false"
+        android:focusable="false"
+        android:paddingLeft="5.0dip" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        android:paddingLeft="5.0dip" >
+
+        <TextView
+            android:id="@+id/songinfo_nameTv"
+            android:layout_width="fill_parent"
+            android:layout_height="30.0dip"
+            android:layout_gravity="bottom"
+            android:layout_weight="0.6"
+            android:clickable="false"
+            android:focusable="false"
+            android:gravity="center_vertical"
+            android:singleLine="true"
+            android:text="未知"
+            
+            android:textSize="20.0sp"
+            android:textStyle="bold"
+            android:typeface="sans" />
+
+        <TextView
+            android:id="@+id/songinfo_singerTv"
+            android:layout_width="fill_parent"
+            android:layout_height="20.0dip"
+            android:layout_weight="0.4"
+            android:clickable="false"
+            android:focusable="false"
+            android:gravity="center_vertical"
+            android:text="未知"
+            android:textStyle="italic"
+            android:typeface="sans" />
+
+    </LinearLayout>
+
+</LinearLayout>
